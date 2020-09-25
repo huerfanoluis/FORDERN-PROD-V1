@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product-v1</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <!--Navbar -->
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="content-logo">
+          <a class="navbar-brand" href="#"><img src="./img/logo FORDERN sin fondo.png" alt="img-logo"></a>
+        </div>
+        <h1>FORDERN</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuFordern"
+          aria-controls="menuFordern" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuFordern">
+          <div class="dropdown">
+            <a class="btn btn-outline-light dropdown-toggle" href="#" role="button" id="dropdownSection"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sección
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownSection">
+              <a class="dropdown-item" href="#">Servicios</a>
+              <a class="dropdown-item" href="#">Productos</a>
+              <a class="dropdown-item" href="#">Todo</a>
+            </div>
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
+            <button class="btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+          <button type="button" class="btn btn-outline-warning btn-lg">Ingresar</button>
+        </div>
+      </nav>
+    </div>
+    <!--categorias -->
+    <div class="container" id="categoriasHeader">
+      <div class="row">
+        <div class="col-10">
+          <div class="cont-categoria">
+            <button type="button" class="btn btn-outline-light btn-sm">Abogados</button>
+            <button type="button" class="btn btn-outline-light btn-sm">Ecofood</button>
+            <button type="button" class="btn btn-outline-light btn-sm">Aire libre</button>
+            <button type="button" class="btn btn-outline-light btn-sm">Deportes</button>
+            <button type="button" class="btn btn-outline-light btn-sm">Diseño</button>
+            <button type="button" class="btn btn-outline-light btn-sm">Tecnologia</button>
+            <button type="button" class="btn btn-outline-light btn-sm">Artesanias</button>
+            <button type="button" class="btn btn-outline-light btn-sm">Deco</button>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="cont-iconos">
+            <a href=""><img src="./img/carro-de-la-compra.png" alt=""></a>
+            <a href=""><img src="./img/ubicacion.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <div id="servicios">
+    <div class="container">
+      <h1>Servicios</h1>
+      <!--menu de tabs-->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link  active" id="invited-tab" data-toggle="tab" href="#invited" role="tab"
+            aria-controls="invited" aria-selected="true">Invitado</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="professional-tab" data-toggle="tab" href="#professional" role="tab"
+            aria-controls="professional" aria-selected="false">Profesional</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="producer-tab" data-toggle="tab" href="#producer" role="tab" aria-controls="producer"
+            aria-selected="false">Productor</a>
+        </li>
+      </ul>
+      <!--contenido de tabs-->
+      <div class="tab-content" id="myTabContent">
+        <!--contenido de tab invitado-->
+        <div class="tab-pane fade show active" id="invited" role="tabpanel" aria-labelledby="invited-tab">
+          <p class="enunciado">La solución que buscas está en nuestra comunidad, lo profesionales y productores en
+            FORDERN buscan entregar
+            su producto o servicio de una calidad que ni te imaginas.</p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img">
+                  <img src="./img/AGILIDAD.png" class="card-img-top" alt="img-agilidad">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Agilidad</h5>
+                  <p class="card-text">Nuestro servicio ubica las ofertas más cercanas y con mejores calificaciones para
+                    que no pierdas tiempo.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/SOLUCION.png" class="card-img-top" alt="img-soluciones">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Soluciones</h5>
+                  <p class="card-text">Nuestra gran comunidad de profesionales y productores te están esperando con la
+                    solución en sus manos.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/EFICIENCIA.png" class="card-img-top" alt="img-eficiencia">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Servicio eficiente</h5>
+                  <p class="card-text">El sistema de evaluación y recompensa constante incentiva a los productores y
+                    profesionales a refinar el servicio al cliente.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/CALIDAD.png" class="card-img-top" alt="img-calidad">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Calidad</h5>
+                  <p class="card-text">La comunidad define los estándares ya que la evaluación es pública y
+                    transEntrarsal,
+                    esta transparencia renueva el concepto de calidad.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/CONFIANZA.png" class="card-img-top" alt="img-confianza">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Confianza</h5>
+                  <p class="card-text">Los perfiles de nuestros asociados son verificados constantemente, y ya que las
+                    calificaciones son públicas, el ambiente es óptimo para que los negocios fluyan con tranquilidad y
+                    buena fe.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--contenido de tab profesional-->
+        <div class="tab-pane fade" id="professional" role="tabpanel" aria-labelledby="professional-tab">
+          <p class="enunciado">Todo aquel que busca la excelencia en su servicio, la mejora constante, el
+            enriquecimiento en su campo y el éxito en su negocio está en FORDERN.</p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img">
+                  <img src="./img/FORO.png" class="card-img-top" alt="img-foros">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Foros ilustrativos</h5>
+                  <p class="card-text">Puedes crear tus foros para compartir y ampliar conocimientos con la comunidad de
+                    profesionales.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/INTERACTIVIDAD.png" class="card-img-top" alt="img-interactividad">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Promoción interactiva </h5>
+                  <p class="card-text">Nuestros algoritmos buscarán publicaciones mejor calificadas y más destacadas
+                    para que la promoción sea constante.
+                  </p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/NEGOCIOSAGILES.png" class="card-img-top" alt="img-negociosAgiles">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Negocios ágiles</h5>
+                  <p class="card-text">Nuestra comunidad mejora constantemente fortaleciendo el ambiente para que los
+                    negocios sean ágiles y rentables.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/COMUNICACION.png" class="card-img-top" alt="img-comunicacion">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Comunicación eficiente</h5>
+                  <p class="card-text">Nuestro sistema de comunicación transversal te brinda diferentes elementos para
+                    que la comunicación sea asertiva y eficiente.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/SIN-INTER.png" class="card-img-top" alt="img-sin-intermediarios">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Sin intermediarios</h5>
+                  <p class="card-text">Somos tu plataforma de promoción, tu vitrina en el mundo digital y tu asistente
+                    para la mejora constante, pero tus negocios serán directamente con el cliente, de la calidad que
+                    entregues depende la prosperidad de tu negocio.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/POSI-MARCA.png" class="card-img-top" alt="img-posi-marca">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Posición de marca</h5>
+                  <p class="card-text">Porque sabemos que la comunidad evalúa tu marca constantemente te brindamos una
+                    vitrina limpia y adaptable a tus necesidades, como tus asistentes queremos que el nombre de tu
+                    negocio siempre esté en la mejor posición.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--contenido de tab productor-->
+        <div class="tab-pane fade" id="producer" role="tabpanel" aria-labelledby="producer-tab">
+          <p class="enunciado">En FORDERN están los productos de la mejor calidad, al no existir intermediarios
+            recibirás precios justos sin que el bolsillo del cliente se vea afectado, la responsabilidad social es un
+            compromiso de todos los invitados al comprar.</p>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img">
+                  <img src="./img/COLABORATIVO.png" class="card-img-top" alt="img-ferias">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Ferias promocionales</h5>
+                  <p class="card-text">Al pertenecer a un gremio podrás organizar ferias para promocionar tus productos,
+                    esta herramienta te permitirá incrementar las ventas y fortalecer tu posición en la economía
+                    regional.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/INTERACTIVIDAD.png" class="card-img-top" alt="img-interactividad">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Promoción interactiva </h5>
+                  <p class="card-text">Nuestros algoritmos buscarán publicaciones mejor calificadas y más destacadas
+                    para que la promoción sea constante.
+                  </p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/NEGOCIOSAGILES.png" class="card-img-top" alt="img-negociosAgiles">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Negocios ágiles</h5>
+                  <p class="card-text">Nuestra comunidad mejora constantemente fortaleciendo el ambiente para que los
+                    negocios sean ágiles y rentables.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/COMUNICACION.png" class="card-img-top" alt="img-comunicacion">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Comunicación eficiente</h5>
+                  <p class="card-text">Nuestro sistema de comunicación transversal te brinda diferentes elementos para
+                    que la comunicación sea asertiva y eficiente.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/SIN-INTER.png" class="card-img-top" alt="img-sin-intermediarios">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Sin intermediarios</h5>
+                  <p class="card-text">Somos tu plataforma de promoción, tu vitrina en el mundo digital y tu asistente
+                    para la mejora constante, pero tus negocios serán directamente con el cliente, de la calidad que
+                    entregues depende la prosperidad de tu negocio.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="cont-img"><img src="./img/POSI-MARCA.png" class="card-img-top" alt="img-posi-marca">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Posición de marca</h5>
+                  <p class="card-text">Porque sabemos que la comunidad evalúa tu marca constantemente te brindamos una
+                    vitrina limpia y adaptable a tus necesidades, como tus asistentes queremos que el nombre de tu
+                    negocio siempre esté en la mejor posición.</p>
+                </div>
+                <button type="button" class="btn btn-light">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row principalFoot">
+        <div class="col-md-3">
+          <div class="cont-col">
+            <h3><a href="">Responsabilidad</a></h3>
+            <h5><a href="">Atribución</a></h5>
+            <h5><a href="">Social</a></h5>
+            <h5><a href="">Legal</a></h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="cont-col">
+            <h3><a href="">Nosotros</a></h3>
+            <h5><a href="">Equipo</a></h5>
+            <h5><a href="">Blog</a></h5>
+            <h5><a href="">Guias</a></h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="cont-col">
+            <h3><a href="">Products</a></h3>
+            <h5><a href="">Comprador</a></h5>
+            <h5><a href="">Prestador de servicios</a></h5>
+            <h5><a href="">Productor</a></h5>
+            <h5><a href="">Empresarial</a></h5>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contImgCorp">
+            <div class="cont-logo"><img src="./img/logo FORDERN sin fondo.png" alt="img-logo"></div>
+            <br>
+            <div class="cont-redes"><img src="" alt="logos de redes"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row derechos">
+        <div class="col-md-6">
+          <div class="cont-info">
+            <p>Aca va el slogan de FORDERN</p>
+            <p>Aca va la direccion de FORDERN</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>FORDERN PROJECT 2020. derechos reservados. </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
